@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "962941493537",
+    "project_id": "etelrendeles-e296d",
+    "storage_bucket": "etelrendeles-e296d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:962941493537:android:6c19d69c87d66373d25e60",
+        "android_client_info": {
+          "package_name": "com.example.etelrendeles"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "962941493537-t7qar5e5enkcu03m9pgdtr54mlvnkaf3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.etelrendeles",
+            "certificate_hash": "c0307fd1c6838cd4de27d0ab86958321d4b6182b"
+          }
+        },
+        {
+          "client_id": "962941493537-susqvah1ptmgjvf5kp08f6ncug6cktj0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeGGUVoSwszsxHmm8h5GgLMy6q8lXOi9Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "962941493537-susqvah1ptmgjvf5kp08f6ncug6cktj0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

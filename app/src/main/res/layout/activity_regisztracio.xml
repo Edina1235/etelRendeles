@@ -6,4 +6,117 @@
     android:layout_height="match_parent"
     tools:context=".RegisztracioActivity">
 
+    <TextView
+        android:id="@+id/regisztracio"
+        android:text="@string/registracio"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:layout_marginBottom="150dp"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/regisztracio"
+        app:layout_constraintVertical_bias="0.05"
+        tools:layout_editor_absoluteX="10dp" />
+
+    <EditText
+        android:id="@+id/szuletesiDatum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:layout_marginBottom="150dp"
+        android:ems="10"
+        android:hint="@string/szuletesiDatum"
+        android:inputType="date"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        app:layout_constraintVertical_bias="0.05"
+        tools:layout_editor_absoluteX="10dp" />
+
+    <EditText
+        android:id="@+id/postaiCim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:layout_marginBottom="150dp"
+        android:ems="10"
+        android:hint="@string/postacim"
+        android:inputType="textPostalAddress"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/szuletesiDatum"
+        app:layout_constraintVertical_bias="0.05"
+        tools:layout_editor_absoluteX="10dp" />
+
+    <EditText
+        android:id="@+id/jelszo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:layout_marginBottom="150dp"
+        android:ems="10"
+        android:hint="@string/jelszo"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/postaiCim"
+        app:layout_constraintVertical_bias="0.05"
+        tools:layout_editor_absoluteX="10dp" />
+
+    <EditText
+        android:id="@+id/jelszoUjra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:layout_marginBottom="150dp"
+        android:ems="10"
+        android:hint="@string/jelszoUjra"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jelszo"
+        app:layout_constraintVertical_bias="0.05"
+        tools:layout_editor_absoluteX="10dp" />
+
+    <Button
+        android:id="@+id/regisztraciobtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="150dp"
+        android:ems="10"
+        android:layout_margin="10sp"
+        android:text="@string/registracio"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jelszoUjra"
+        app:layout_constraintVertical_bias="0.1"/>
+
+    <Button
+        android:id="@+id/megsebtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="150dp"
+        android:ems="10"
+        android:layout_margin="10sp"
+        android:text="@string/megse"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/regisztraciobtn"
+        app:layout_constraintVertical_bias="0.1"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

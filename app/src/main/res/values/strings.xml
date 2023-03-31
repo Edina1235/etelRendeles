@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">etelRendeles</string>
+    <string name="registracio">Regisztráció</string>
+    <string name="email">Email</string>
+    <string name="jelszo">Jelszó</string>
+    <string name="jelszoUjra">Jelszó Újra</string>
+    <string name="postacim">Postai Cím</string>
+    <string name="szuletesiDatum">Születési dátum</string>
+    <string name="megse">Mégse</string>
 </resources>
