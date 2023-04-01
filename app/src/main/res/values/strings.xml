@@ -7,4 +7,8 @@
     <string name="postacim">Postai Cím</string>
     <string name="szuletesiDatum">Születési dátum</string>
     <string name="megse">Mégse</string>
+    <string name="bejelentkezes">Bejelentkezés</string>
+    <string name="vendegkent">Bejelentkezés vendégként</string>
+    <string name="google">Bejelentkezés Google-el</string>
+    <string name="telefonszam">Telefonszám</string>
 </resources>
