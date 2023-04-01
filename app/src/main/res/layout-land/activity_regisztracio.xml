@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     tools:context=".RegisztracioActivity">
 
     <TextView
         android:id="@+id/regisztracio"
         android:text="@string/registracio"
         android:textAlignment="center"
-        android:textSize="24sp"
+        android:textSize="23sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -23,7 +27,7 @@
 
     <EditText
         android:id="@+id/email"
-        android:layout_width="match_parent"
+        android:layout_width="330dp"
         android:layout_height="wrap_content"
         android:layout_margin="10sp"
         android:layout_marginBottom="150dp"
@@ -32,13 +36,13 @@
         android:inputType="textEmailAddress"
         android:minHeight="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/regisztracio"
-        app:layout_constraintVertical_bias="0.05"
-        tools:layout_editor_absoluteX="10dp" />
+        app:layout_constraintVertical_bias="0.1" />
 
     <EditText
         android:id="@+id/szuletesiDatum"
-        android:layout_width="match_parent"
+        android:layout_width="330dp"
         android:layout_height="wrap_content"
         android:layout_margin="10sp"
         android:layout_marginBottom="150dp"
@@ -47,13 +51,13 @@
         android:inputType="date"
         android:minHeight="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/email"
-        app:layout_constraintVertical_bias="0.05"
-        tools:layout_editor_absoluteX="10dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/regisztracio"
+        app:layout_constraintVertical_bias="0.1" />
 
     <EditText
         android:id="@+id/telefonszam"
-        android:layout_width="match_parent"
+        android:layout_width="330dp"
         android:layout_height="wrap_content"
         android:layout_margin="10sp"
         android:layout_marginBottom="150dp"
@@ -62,13 +66,13 @@
         android:inputType="phone"
         android:minHeight="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/szuletesiDatum"
-        app:layout_constraintVertical_bias="0.05"
-        tools:layout_editor_absoluteX="10dp" />
+        app:layout_constraintVertical_bias="0.1" />
 
     <EditText
         android:id="@+id/postaiCim"
-        android:layout_width="match_parent"
+        android:layout_width="330dp"
         android:layout_height="wrap_content"
         android:layout_margin="10sp"
         android:layout_marginBottom="150dp"
@@ -77,13 +81,13 @@
         android:inputType="textPostalAddress"
         android:minHeight="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/telefonszam"
-        app:layout_constraintVertical_bias="0.05"
-        tools:layout_editor_absoluteX="10dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/szuletesiDatum"
+        app:layout_constraintVertical_bias="0.1" />
 
     <EditText
         android:id="@+id/jelszo"
-        android:layout_width="match_parent"
+        android:layout_width="330dp"
         android:layout_height="wrap_content"
         android:layout_margin="10sp"
         android:layout_marginBottom="150dp"
@@ -92,13 +96,13 @@
         android:inputType="textPassword"
         android:minHeight="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/postaiCim"
-        app:layout_constraintVertical_bias="0.05"
-        tools:layout_editor_absoluteX="10dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/telefonszam"
+        app:layout_constraintVertical_bias="0.1" />
 
     <EditText
         android:id="@+id/jelszoUjra"
-        android:layout_width="match_parent"
+        android:layout_width="330dp"
         android:layout_height="wrap_content"
         android:layout_margin="10sp"
         android:layout_marginBottom="150dp"
@@ -107,9 +111,9 @@
         android:inputType="textPassword"
         android:minHeight="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/jelszo"
-        app:layout_constraintVertical_bias="0.05"
-        tools:layout_editor_absoluteX="10dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/telefonszam"
+        app:layout_constraintVertical_bias="0.1" />
 
     <Button
         android:id="@+id/regisztraciobtn"
@@ -136,5 +140,5 @@
         app:layout_constraintTop_toBottomOf="@+id/regisztraciobtn"
         app:layout_constraintVertical_bias="0.0"/>
 
-
 </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

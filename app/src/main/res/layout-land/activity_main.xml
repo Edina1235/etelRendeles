@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     tools:context=".MainActivity">
 
     <TextView
@@ -18,12 +21,12 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.2"/>
+        app:layout_constraintVertical_bias="0.05"/>
 
 
         <EditText
             android:id="@+id/email"
-            android:layout_width="match_parent"
+            android:layout_width="330dp"
             android:layout_height="wrap_content"
             android:layout_margin="10sp"
             android:layout_marginBottom="150dp"
@@ -32,13 +35,13 @@
             android:inputType="textEmailAddress"
             android:minHeight="48dp"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/bejelentkezes"
-            app:layout_constraintVertical_bias="0.15"
-            tools:layout_editor_absoluteX="10dp" />
+            app:layout_constraintVertical_bias="0.05" />
 
         <EditText
             android:id="@+id/jelszo"
-            android:layout_width="match_parent"
+            android:layout_width="330dp"
             android:layout_height="wrap_content"
             android:layout_margin="10sp"
             android:layout_marginBottom="150dp"
@@ -47,60 +50,61 @@
             android:inputType="textPassword"
             android:minHeight="48dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/email"
-            app:layout_constraintVertical_bias="0.05"
-            tools:layout_editor_absoluteX="10dp" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bejelentkezes"
+            app:layout_constraintVertical_bias="0.05" />
 
         <Button
             android:id="@+id/bejelentkezesbtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="10sp"
             android:layout_marginBottom="150dp"
             android:ems="10"
             android:onClick="bejelentkezes"
-            android:layout_margin="10sp"
             android:text="@string/bejelentkezes"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/jelszo"
-            app:layout_constraintVertical_bias="0.17"/>
+            app:layout_constraintVertical_bias="0.1" />
 
         <Button
             android:id="@+id/vendegbtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="10sp"
             android:layout_marginBottom="150dp"
             android:ems="10"
             android:onClick="vendeg"
-            android:layout_margin="10sp"
             android:text="@string/vendegkent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/bejelentkezesbtn"
-            app:layout_constraintVertical_bias="0.0"/>
+            app:layout_constraintVertical_bias="0.0" />
 
         <Button
             android:id="@+id/googlebtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="10sp"
             android:layout_marginBottom="150dp"
             android:ems="10"
             android:onClick="google"
-            android:layout_margin="10sp"
             android:text="@string/google"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/vendegbtn"
-            app:layout_constraintVertical_bias="0.0"/>
+            app:layout_constraintVertical_bias="0.0" />
 
         <Button
             android:id="@+id/registraciobtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="10sp"
             android:layout_marginBottom="150dp"
             android:ems="10"
             android:onClick="regisztracio"
-            android:layout_margin="10sp"
             android:text="@string/registracio"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/googlebtn"
-            app:layout_constraintVertical_bias="0.0"/>
+            app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
