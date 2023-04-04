@@ -6,4 +6,95 @@
     android:layout_height="match_parent"
     tools:context=".ModositasActivity">
 
+    <TextView
+        android:id="@+id/jelenlegi"
+        android:text="@string/jelszomod"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.03"
+        />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/jelenlegi"
+        android:textAlignment="center"
+        android:layout_margin="10sp"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jelenlegi"
+        app:layout_constraintVertical_bias="0.05"
+        />
+
+    <EditText
+        android:id="@+id/mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:hint="@string/email"
+        android:minHeight="48dp"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        app:layout_constraintVertical_bias="0.1"
+        tools:layout_editor_absoluteX="10dp" />
+
+    <EditText
+        android:id="@+id/jelszo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:hint="@string/jelszo"
+        android:minHeight="48dp"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mail"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="10dp" />
+
+    <EditText
+        android:id="@+id/jelszoUjra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:hint="@string/jelszoUjra"
+        android:minHeight="48dp"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jelszo"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="10dp" />
+
+    <Button
+        android:id="@+id/modositbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/modosit"
+        android:layout_margin="10sp"
+        android:onClick="modosit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jelszoUjra"
+        app:layout_constraintVertical_bias="0.1"/>
+
+    <Button
+        android:id="@+id/megsebtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/megse"
+        android:layout_margin="10sp"
+        android:onClick="megse"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/modositbtn"
+        app:layout_constraintVertical_bias="0.0"/>
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
