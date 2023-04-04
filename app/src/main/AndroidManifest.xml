@@ -21,6 +21,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".RegisztracioActivity"/>
+        <activity android:name=".ModositasActivity"/>
+        <activity android:name=".EtelekActivity"/>
+        <activity android:name=".RendeleseimActivity"/>
     </application>
 
 </manifest>
