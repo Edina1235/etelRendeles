@@ -11,4 +11,85 @@
     <string name="vendegkent">Bejelentkezés vendégként</string>
     <string name="google">Bejelentkezés Google-el</string>
     <string name="telefonszam">Telefonszám</string>
+    <string name="jelenlegi">Jelenlegi adataim</string>
+    <string name="modosit">Módosít</string>
+    <string name="beallitasok">Beállítások</string>
+    <string name="kijelentkezes">Kijelentkezés</string>
+    <string name="oszlopok">Oszlopok</string>
+    <string name="kosar">Kosár</string>
+    <string name="kereses">Keresés</string>
+    <string name="jelszomod">Jelszó módosítás</string>
+
+    <string-array name="etelek">
+        <item>Bableves</item>
+        <item>Paradicsomleves</item>
+        <item>Zöldbableves</item>
+        <item>Zöldborsóleves</item>
+        <item>Fasirt</item>
+        <item>Gombás húsos burek</item>
+        <item>Lasagne</item>
+        <item>Rántotthús</item>
+        <item>Sajttal sonkával töltött csirkemell</item>
+        <item>Spagetti</item>
+        <item>Borsó főzelék</item>
+        <item>Káposzta főzelék</item>
+        <item>Francia saláta</item>
+        <item>Sopszka saláta</item>
+        <item>Uborka saláta</item>
+        <item>Gesztenyepüré</item>
+        <item>Gesztenyepüré torta</item>
+        <item>Mákosguba</item>
+        <item>Moszkva torta</item>
+        <item>Somlóigaluska</item>
+        <item>Vanilia fagyi</item>
+    </string-array>
+    
+    <string-array name="arak">
+        <item>500ft</item>
+        <item>500ft</item>
+        <item>500ft</item>
+        <item>500ft</item>
+        <item>400ft</item>
+        <item>450ft</item>
+        <item>750ft</item>
+        <item>500ft</item>
+        <item>600ft</item>
+        <item>700ft</item>
+        <item>400ft</item>
+        <item>400ft</item>
+        <item>200ft</item>
+        <item>200ft</item>
+        <item>200ft</item>
+        <item>350ft</item>
+        <item>500ft/szelet</item>
+        <item>500ft</item>
+        <item>550ft/szelet</item>
+        <item>350ft</item>
+        <item>200ft/gombóc</item>
+    </string-array>
+    
+    <string-array name="kepek">
+        <item>@drawable/bableves</item>
+        <item>@drawable/paradicsomlev</item>
+        <item>@drawable/zoldbableves</item>
+        <item>@drawable/zoldborsoleves</item>
+        <item>@drawable/fasirt</item>
+        <item>@drawable/burek</item>
+        <item>@drawable/lasagne</item>
+        <item>@drawable/rantott</item>
+        <item>@drawable/toltottcsirkemell</item>
+        <item>@drawable/spagetti</item>
+        <item>@drawable/borso</item>
+        <item>@drawable/kaposztafozelek</item>
+        <item>@drawable/francia</item>
+        <item>@drawable/sopszka</item>
+        <item>@drawable/uborka</item>
+        <item>@drawable/gesztenyepure</item>
+        <item>@drawable/gesztenyetorta</item>
+        <item>@drawable/guba</item>
+        <item>@drawable/moszkva</item>
+        <item>@drawable/galuska</item>
+        <item>@drawable/fagyi</item>
+    </string-array>
 </resources>
+
