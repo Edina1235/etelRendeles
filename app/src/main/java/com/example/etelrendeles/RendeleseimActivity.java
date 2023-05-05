@@ -49,6 +49,10 @@ public class RendeleseimActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
+        osszeg();
+    }
+
+    public void osszeg() {
         int ossz = rModel.osszeg(aktualUser.getEmail());
         Log.d(EtelekActivity.class.getName(), "Ennyirendeles " + ossz);
         osszeg.setText(String.valueOf(ossz));
@@ -67,6 +71,7 @@ public class RendeleseimActivity extends AppCompatActivity {
         }
         Rendeles rendeles = new Rendeles(Objects.requireNonNull(aktualUser.getEmail()),etelNev, mennyiseg, ar, kepek.getResourceId(hanyadik,0));
         rModel.delete(rendeles);
+        osszeg();
         kepek.recycle();
     }
 
