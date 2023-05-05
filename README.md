@@ -1,6 +1,6 @@
 # etelRendeles
 
-Engedélyezni kell az alkalmazás értesítését ahhoz, hogy tudjon küldeni.
+Engedélyezni kell az alkalmazás értesítésitéseit ahhoz, hogy tudjon küldeni.
 
 3 regisztrált felhasználó van:
 email (jelszó)
