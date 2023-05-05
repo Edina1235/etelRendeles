@@ -20,9 +20,7 @@ public class MainActivity extends AppCompatActivity {
     EditText email;
     EditText jelszo;
 
-    private SharedPreferences sharedPreferences;
     private FirebaseAuth firebaseAuth;
-    private GoogleSignInClient googleSignInClient;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +33,6 @@ public class MainActivity extends AppCompatActivity {
                 .requestIdToken(getString(R.string.default_web_client_id))
                 .requestEmail()
                 .build();
-        googleSignInClient = GoogleSignIn.getClient(this, gso);
     }
 
     public void bejelentkezes(View view) {
@@ -50,11 +47,6 @@ public class MainActivity extends AppCompatActivity {
     public void regisztracio(View view) {
         Intent intent = new Intent(this, RegisztracioActivity.class);
         startActivity(intent);
-    }
-
-    public void google(View view) {
-        Intent signInIntent = googleSignInClient.getSignInIntent();
-        startActivityForResult(signInIntent, 43);
     }
 
     public void vendeg(View view) {

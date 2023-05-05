@@ -19,6 +19,11 @@
     <string name="kosar">Kosár</string>
     <string name="kereses">Keresés</string>
     <string name="jelszomod">Jelszó módosítás</string>
+    <string name="rendeles">Rendelés</string>
+    <string name="vissza">Vissza</string>
+    <string name="_1000">1000</string>
+    <string name="rendelesed">Készítjük a rendelésed...</string>
+    <string name="felhasznalok">Felhasználók</string>
 
     <string-array name="etelek">
         <item>Bableves</item>
@@ -44,28 +49,52 @@
         <item>Vanilia fagyi</item>
     </string-array>
     
-    <string-array name="arak">
-        <item>500ft</item>
-        <item>500ft</item>
-        <item>500ft</item>
-        <item>500ft</item>
-        <item>400ft</item>
-        <item>450ft</item>
-        <item>750ft</item>
-        <item>500ft</item>
-        <item>600ft</item>
-        <item>700ft</item>
-        <item>400ft</item>
-        <item>400ft</item>
-        <item>200ft</item>
-        <item>200ft</item>
-        <item>200ft</item>
-        <item>350ft</item>
-        <item>500ft/szelet</item>
-        <item>500ft</item>
-        <item>550ft/szelet</item>
-        <item>350ft</item>
-        <item>200ft/gombóc</item>
+    <integer-array name="arak">
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>500</item>
+        <item>400</item>
+        <item>450</item>
+        <item>750</item>
+        <item>500</item>
+        <item>600</item>
+        <item>700</item>
+        <item>400</item>
+        <item>400</item>
+        <item>200</item>
+        <item>200</item>
+        <item>200</item>
+        <item>350</item>
+        <item>500</item>
+        <item>500</item>
+        <item>550</item>
+        <item>350</item>
+        <item>200</item>
+    </integer-array>
+
+    <string-array name="mennyisegek">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
     </string-array>
     
     <string-array name="kepek">

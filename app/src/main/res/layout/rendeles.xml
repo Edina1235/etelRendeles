@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/kep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="180dp"
+            android:src="@drawable/spagetti"
+            android:adjustViewBounds="true" />
+
+        <TextView
+            android:id="@+id/neve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:padding="8dp"
+            android:text="Spagetti"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="22dp" />
+
+        <TextView
+            android:id="@+id/ar"
+            android:text="1500ft"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/neve"
+            android:layout_marginLeft="220dp"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ar"
+            android:text="1"
+            android:textSize="20dp"
+            android:layout_marginLeft="250dp"
+            android:textColor="@color/black"
+            />
+
+
+        <ImageView
+            android:id="@+id/exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:minWidth="40dp"
+            android:minHeight="40dp"
+            android:src="@drawable/close" />
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -12,31 +12,32 @@
 
         <ImageView
             android:id="@+id/kep"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:maxWidth="300dp"
             android:src="@drawable/spagetti"
             android:adjustViewBounds="true" />
 
         <TextView
             android:id="@+id/neve"
-            android:text="Spagetti"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="320dp"
             android:padding="8dp"
-            android:textSize="25dp"
-            android:layout_below="@id/kep"
+            android:text="Spagetti"
             android:textAlignment="center"
-            android:textColor="@color/black" />
+            android:textColor="@color/black"
+            android:textSize="25dp" />
 
         <TextView
             android:id="@+id/ar"
             android:text="1500ft"
             android:textSize="20dp"
             android:textAlignment="center"
-            android:inputType="number"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/neve"
+            android:layout_marginLeft="340dp"
             android:padding="8dp"
             android:textColor="@color/black"
             />
@@ -47,10 +48,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/ar"
+            android:layout_marginLeft="430dp"
+            android:layout_marginTop="4dp"
             android:layout_marginBottom="12dp"
             android:padding="8dp"
-            android:textColor="@color/black"
-            android:layout_centerHorizontal="true"/>
+            android:textColor="@color/black" />
 
         <ImageView
             android:id="@+id/kosarba"
@@ -71,7 +73,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/tetszikvagynem"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="310dp"
             android:minWidth="48dp"
             android:minHeight="48dp"
             android:src="@drawable/like"

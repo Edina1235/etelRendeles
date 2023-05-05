@@ -81,19 +81,6 @@
             app:layout_constraintVertical_bias="0.0" />
 
         <Button
-            android:id="@+id/googlebtn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10sp"
-            android:layout_marginBottom="150dp"
-            android:ems="10"
-            android:onClick="google"
-            android:text="@string/google"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/vendegbtn"
-            app:layout_constraintVertical_bias="0.0" />
-
-        <Button
             android:id="@+id/registraciobtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -103,7 +90,7 @@
             android:onClick="regisztracio"
             android:text="@string/registracio"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/googlebtn"
+            app:layout_constraintTop_toBottomOf="@+id/vendegbtn"
             app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

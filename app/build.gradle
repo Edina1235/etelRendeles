@@ -32,10 +32,12 @@ android {
 dependencies {
 
     implementation "androidx.cardview:cardview:1.0.0"
+    implementation 'com.nineoldandroids:library:2.4.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.work:work-runtime-ktx:2.7.1'
     implementation 'com.google.android.material:material:1.8.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-    implementation 'com.google.firebase:firebase-firestore:24.4.5'
+    implementation 'com.google.firebase:firebase-firestore:24.5.0'
     implementation 'com.android.support:multidex:1.0.3'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
@@ -43,4 +45,19 @@ dependencies {
     implementation platform('com.google.firebase:firebase-bom:31.3.0')
     implementation 'com.google.firebase:firebase-auth'
     implementation 'com.google.android.gms:play-services-auth:20.4.1'
+    implementation "androidx.core:core:1.6.0"
+    implementation 'com.android.support:appcompat-v7:'
+
+    def room_version = "2.2.6"
+    implementation "androidx.room:room-runtime:2.2.6"
+    annotationProcessor "androidx.room:room-compiler:$room_version"
+
+
+    implementation "androidx.lifecycle:lifecycle-viewmodel:2.3.1"
+    implementation "androidx.lifecycle:lifecycle-livedata:2.3.1"
+    implementation "androidx.lifecycle:lifecycle-runtime:2.3.1"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1"
+    annotationProcessor "androidx.lifecycle:lifecycle-compiler:2.3.1"
+    implementation "androidx.lifecycle:lifecycle-common-java8:2.3.1"
+
 }

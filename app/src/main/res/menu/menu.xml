@@ -14,19 +14,29 @@
         android:icon="@drawable/shopping"
         android:title="@string/kosar"
         android:orderInCategory="2"/>
-    <group>
-        <item
-            android:id="@+id/beallitasok"
-            app:showAsAction="never"
-            android:title="@string/beallitasok"
-            android:icon="@drawable/settings"
-            android:orderInCategory="1"/>
-        <item
-            android:id="@+id/kijelentkezes"
-            app:showAsAction="never"
-            android:icon="@drawable/more"
-            android:title="@string/kijelentkezes"
-            android:orderInCategory="2"/>
+    <item
+        android:title=""
+        android:icon="@drawable/more"
+        app:showAsAction="always"
+        android:orderInCategory="3"
+        >
+        <menu>
+            <item
+                android:id="@+id/beallitasok"
+                android:title="@string/beallitasok"
+                android:icon="@drawable/settings"
+                android:orderInCategory="1"/>
+            <item
+                android:id="@+id/felhasznalok"
+                android:title="@string/felhasznalok"
+                android:icon="@drawable/peoples"
+                android:orderInCategory="2"/>
+            <item
+                android:id="@+id/kijelentkezes"
+                android:icon="@drawable/logout"
+                android:title="@string/kijelentkezes"
+                android:orderInCategory="3"/>
 
-    </group>
+        </menu>
+    </item>
 </menu>
