@@ -39,20 +39,21 @@
             app:layout_constraintTop_toBottomOf="@+id/bejelentkezes"
             app:layout_constraintVertical_bias="0.05" />
 
-        <EditText
-            android:id="@+id/jelszo"
-            android:layout_width="330dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="10sp"
-            android:layout_marginBottom="150dp"
-            android:ems="10"
-            android:hint="@string/jelszo"
-            android:inputType="textPassword"
-            android:minHeight="48dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/bejelentkezes"
-            app:layout_constraintVertical_bias="0.05" />
+    <EditText
+        android:id="@+id/jelszo"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:layout_marginBottom="150dp"
+        android:ems="10"
+        android:hint="@string/jelszo"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/email"
+        app:layout_constraintTop_toBottomOf="@+id/bejelentkezes"
+        app:layout_constraintVertical_bias="0.05" />
 
         <Button
             android:id="@+id/bejelentkezesbtn"
