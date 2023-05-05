@@ -96,7 +96,6 @@ public class EtelekActivity extends AppCompatActivity {
         super.onResume();
         List<Rendeles> seged = vModel.getAllList();
         if(seged!=null) {
-           //TODO menu.findItem(R.id.kosar).setIcon(ContextCompat.getDrawable(this, R.drawable.fullshopping));
             Log.d(LOG, "van bennem valami");
             rendeles=seged;
         }
