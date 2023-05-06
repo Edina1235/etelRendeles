@@ -24,6 +24,7 @@
     <string name="_1000">1000</string>
     <string name="rendelesed">Készítjük a rendelésed...</string>
     <string name="felhasznalok">Felhasználók</string>
+    <string name="cim">Étel Rendelés</string>
 
     <string-array name="etelek">
         <item>Bableves</item>

@@ -26,16 +26,6 @@ public class WaitingActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.waiting_activity);
         mp = MediaPlayer.create(this, R.raw.motor);
-
-        Intent intent = new Intent(this, MyReceiver.class);
-        PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 0, intent, PendingIntent.FLAG_MUTABLE);
-
-        AlarmManager alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
-
-        long aktualis = System.currentTimeMillis();
-        long fiveMinute = 5*1000;
-
-        alarmManager.setExact(AlarmManager.ELAPSED_REALTIME_WAKEUP, aktualis + fiveMinute, pendingIntent);
         notification = new MyNotification(this);
         uzen();
     }
@@ -45,14 +35,12 @@ public class WaitingActivity extends AppCompatActivity {
         mp.start();
         Toast.makeText(this, "5 percen belül megérkezik a rendelésed", Toast.LENGTH_LONG).show();
 
-
         final Timer myt = new Timer();
         myt.schedule(new TimerTask() {
 
             @Override
             public void run() {
                 notification.send("Rendelésed megérkezett");
-
                 try {
                     Intent intent = new Intent(WaitingActivity.this, EtelekActivity.class);
                     startActivity(intent);
@@ -62,7 +50,7 @@ public class WaitingActivity extends AppCompatActivity {
 
                 myt.cancel();
             }
-        }, 300000);
+        }, 30000);
     }
 
     @Override
